@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Parallax</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+
+			body, html {
+				margin: 0;
+				font: 16px "Lato", sans-serif;
+				color: #777;
+				height: 100%;
+			}
+
+			.conteudo {
+				color: #777;
+				background: white;
+				text-align: justify;
+				padding: 50px 80px;
+			}
+
+			h3 {
+				text-transform: uppercase;
+				text-align: center;
+				color: #111;
+				}
+
+			p {
+				margin-bottom: 20px;
+			}
+
+			.conteudo-titulo {
+				position: absolute;
+				top: 45%;
+				width: 100%;
+				text-align: center;
+			}
+
+			.conteudo-titulo span.titulo {
+				color: #fff;
+				background-color: #111;
+				padding: 18px;
+				font-size: 25px;
+				letter-spacing: 5px;
+				text-transform: uppercase;
+			}
+
+			/* Efeito Parallax
+			------------------- */
+
+			.caixa1, .caixa2, .caixa3, .caixa4 {
+				height: 100%;
+				position: relative;
+				opacity: 0.8;
+				background-repeat: no-repeat; /* Para não repetir a imagem*/
+				background-size: cover; /*Para a imagem ocupar todo o espaço idependente do tamanho da tela */
+				background-position: center; /*Para centralizar a imagem */
+				background-attachment: fixed; /*Para criar o Parallax */
+			}
+
+			.caixa1 {
+				background-image: url(imagens/imagem1.jpg);
+			}
+
+			.caixa2 {
+				background-image: url(imagens/imagem2.jpg);
+			}
+
+			.caixa3 {
+				background-image: url(imagens/imagem3.jpg);
+			}
+
+			.caixa4 {
+				background-image: url(imagens/imagem4.jpg);
+			}
+			
+		</style>
+	</head>
+
+	<body>
+
+		<div class="caixa1">
+			<div class="conteudo-titulo">
+				<span class="titulo">Passeio de Balões</span> 
+			</div>
+		</div>
+
+		<div class="conteudo">
+			<h3>Parallax</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac arcu et nulla convallis elementum vitae in enim. Sed eu nunc faucibus, finibus lorem at, faucibus ante. Aliquam bibendum, neque dapibus viverra fermentum, dolor lectus vulputate turpis, sed gravida nulla purus vel est.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac arcu et nulla convallis elementum vitae in enim. Sed eu nunc faucibus, finibus lorem at, faucibus ante. Aliquam bibendum, neque dapibus viverra fermentum, dolor lectus vulputate turpis, sed gravida nulla purus vel est.</p>
+		</div>
+
+		<div class="caixa2">
+			<div class="conteudo-titulo">
+				<span class="titulo">pegando a estrada</span> 
+			</div>
+		</div>
+
+		<div class="caixa3">
+			<div class="conteudo-titulo">
+				<span class="titulo">por do sol</span> 
+			</div>
+		</div>
+
+		<div class="caixa4">
+			<div class="conteudo-titulo">
+				<span class="titulo">montanhas</span> 
+			</div>
+		</div>
+
+	</body>
+</html>

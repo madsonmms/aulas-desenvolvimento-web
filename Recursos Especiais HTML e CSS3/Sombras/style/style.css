@@ -1,0 +1,17 @@
+/*Opacidade */
+
+#caixa {
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+	padding: 8px;
+	background: #009670;
+	box-shadow: -5px 10px 2px 20px black; /*direção horizontal, vertical, blur (embaçamento), spread e cor */
+	/*Não faz aumentar o tamanho da box do elemento */
+}
+
+#caixa>h1 {
+	color: white;
+	text-shadow: -5px 10px 5px black; /*direção horizontal, vertical, blur e cor */
+	/*Não faz aumentar o tamanho da box do elemento */
+}

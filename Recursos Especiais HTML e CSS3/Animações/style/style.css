@@ -1,0 +1,77 @@
+/*Animações */
+
+/*
+@-webkit-keyframes animacao-caixa {
+	from {
+		background: red;
+	}
+
+	to {
+		background: yellow;
+	}
+}
+
+@-moz-keyframes animacao-caixa {
+	from {
+		background: red;
+	}
+
+	to {
+		background: yellow;
+	}
+}
+
+@-o-keyframes animacao-caixa {
+	from {
+		background: red;
+	}
+
+	to {
+		background: yellow;
+	}
+}
+
+Prefixos de compatibilidade */
+
+@keyframes animacao-caixa {
+	from { /*define o estado inicial*/
+		background: red;
+		border-radius: 0px;
+		top: 0;
+		left: 0;
+		opacity: 0;
+	}
+
+	to { /*define o estado final */
+		background: yellow;
+		border-radius: 300px;
+		top: 300px;
+		left: 300px;
+		opacity: 1;
+	}
+}
+
+#caixa {
+	width: 300px;
+	height: 300px;
+	background: red;
+	position: absolute;
+
+	/*Forma por extenso
+	Essas formas também são utilizadas com prefixo de compatibilidade
+	como:
+	-webkit-
+	-moz-
+	-O-*/
+
+	/* animation-name: animacao-caixa; /*chama a animação */
+	/* animation-duration: 5s; /* define a duração da animação */
+	/* animation-delay: 3s; /*faz a animação esperar 3 segundos depois de carregar a página para começar */
+	/* animation-iteration-count: 2; /*faz a animação se repetir */
+	/* animation-direction: alternate; /* faz a animação e depois o caminho inverso */
+	/* animation-direction: reverse; ---- faz o inverso da animação */
+
+	/*Forma única - também necessário prefixo*/
+	animation: animacao-caixa 5s 1.5s 5 alternate;
+}
+

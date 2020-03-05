@@ -1,0 +1,57 @@
+/*--------- Seção Todos ---------*/
+
+body{
+	margin: 0px;
+
+}
+
+a{
+	text-decoration: none;
+}
+
+/*--------- Fim Seção Todos ---------*/
+
+/*--------- Seção do Topo ---------*/
+
+div#home, div#sobre, div#fale-conosco{
+	height: 100vh;
+}
+
+#topo{
+	font-size: 16px;
+	margin: 2px auto;
+	display: inline-block;
+	border-bottom: 1px solid #CCC;
+}
+
+#logo, #menu{
+	float: left;
+	height: 55px;
+	margin: 5px;
+}
+
+/*-- Menu --*/
+
+#menu ul li{
+	display: inline-block;
+	margin: 0px 7px;
+}
+
+#menu ul{
+	margin: 1em 0em;
+	font-size: 1.17em;
+}
+
+/*-- Fim Menu --*/
+
+#login{
+	float: right;
+	height: 55px;
+	margin: 5px;
+}
+
+#usuario-senha{
+	margin: 1.25em 0 1.25em 2.5em;
+}
+
+/*--------- Fim Seção do Topo ----------*/
