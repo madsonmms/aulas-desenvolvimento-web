@@ -36,9 +36,12 @@
 				stretch|center|flex-start|flex-end|baseline
 				*/
 				align-items: baseline;
+				/*baseline indica que o alinhamento se dá a partir da linha superior do texto*/
 			}
 
 			.item {
+				width: 100px;
+				height: 100px;
 				background: white;
 				border: 1px solid gray;
 				margin: 10px;
@@ -52,7 +55,7 @@
 
 		<h1>Flexbox</h1>
 		<div id="conteudo">
-			<div class="item" style="padding-top: 30px;">01</div>
+			<div class="item">01</div>
 			<div class="item">02</div>
 			<div class="item">03</div>
 			<div class="item">04 <br> mais coisas foda c</div>
