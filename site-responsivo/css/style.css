@@ -1,0 +1,43 @@
+/* Resets*/
+body,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a:link,
+a:visited
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/*para testes*/
+/*background: blueviolet;*/
+
+/*Estrutura
+--------------------------------------------------------*/
+
+.container {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #FBFB69;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    padding: 5px;
+    margin-left: 8px;
+}
