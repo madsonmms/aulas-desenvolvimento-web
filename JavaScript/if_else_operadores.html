@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Introdução a JavaScript</title>
+    </head>
+
+    <script>
+        
+        var nota = prompt('Digite a nota')
+        var faltas = prompt('Digita as faltas')
+
+        var media = 6
+        var faltasMaximas = 15
+
+        if(nota >= media && faltas <= falasMaximas) { 
+            document.write('Aprovado')
+            //lógica
+        }
+        else {
+            document.write('Reprovado')
+            //lógica
+        }
+
+
+
+        //Operadores ternários
+        
+        //Operador ternário, variável = (<condição>) ? <se verdadeiro> : <se falso>
+
+        //Operadores ternários não permitem inclusão de lógica nos seus resultados
+
+        var resultado = nota >= media && faltas <= falasMaximas ? 'Aprovado' : 'Reprovado'
+
+        document.write('Operador Ternário<br><br>' + resultado)
+
+    </script>
+
+    <body>
+        
+    </body>
+</html>
