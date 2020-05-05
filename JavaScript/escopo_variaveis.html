@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Introdução a JavaScript</title>
+    </head>
+
+    <script>
+
+        //Escopos de variáveis: global, bloco e função
+
+        //global, acessível de qualquer escopo
+        var serie1 = 'The Midnight Gospel'
+
+        if(true) {
+            document.write(serie1)
+
+            //bloco, variável sofre hosting e se torna global
+            var serie2 = 'Im Not Okay With This'
+        }
+
+        document.write('<br/>' + serie2)
+
+        function funcao() {
+            document.write(serie1 + '<br/>' + serie2 + '<br/>')
+            
+            //funcao, variável disponível somente no escopo
+            var serie3 = 'Gumball'
+        }
+
+        document.write(serie3) //Não funciona devido a escopo de funcao
+
+    </script>
+
+    <body>
+        
+    </body>
+</html>
