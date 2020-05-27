@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Introdução a JavaScript</title>
+    </head>
+
+    <script>
+
+        //para mais atributos e métodos visite:
+        //https://www.w3schools.com/jsref/jsref_obj_string.asp
+
+        //Funções Nativas de String
+
+        var nome = ' Madson Martins de Souza '
+
+        //propriedade trim
+        document.write(nome.trim())
+
+        //propriedade length
+        //informa quantos indices tem a String
+        document.write(nome.length + '<br/>')
+
+        //propriedade charAt
+        //retorna o chacatere naquele índice
+        document.write(nome.charAt(3))
+
+        //propriedade indexOf
+        //retorna a primeira ocorrência de um charactere na String
+        //Se o charactere não existe retorna -1
+        document.write(nome.indexOf('s'))
+
+        //propriedade replace
+        //substitui uma ocorrência por outra através de pesquisa
+        document.write(nome.replace('de Souza', 'Frederichi'))
+
+        //propriedade substr
+        //extrai apenas uma cadeia de characteres a partir (e inclusindo) um índice
+        //abaixo extrai a partir da posição 7, 6 characteres a frente
+        document.write(nome.substr(7, 6))
+
+        //propriedade toLowerCase/Uppercase
+        //transforma a string para as letras minúsculas ou caixa Alta
+        document.write(nome.toLowerCase())
+
+    </script>
+
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Introdução a JavaScript</title>
+    </head>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        div.titulo {
+            text-align: center;
+        }
+        
+        div.teste {
+            display: flex;
+            justify-content: space-around;
+            box-sizing: border-box;
+            margin: 50px;
+        }
+
+        div.teste > div {
+            width: 200px;
+            height: 150px;
+            text-align: center;
+            line-height: 9rem;
+            color: white;
+            font-size: 1.4em;
+        }
+
+        div.teste > div:hover {
+            cursor: pointer;
+        }
+
+    </style>
+
+    <script>
+        
+        function onMouseClick(){
+            alert('O usuário clicou')
+        }
+
+        function onDBClick() {
+            alert('O usuário clicou duas vezes')
+        }
+
+        function onMouseUp() {
+            alert('O click foi liberado')
+        }
+
+        function onMouseOver() {
+            alert('O cursor passou sobre o elemento')
+        }
+
+        function onMouseOut() {
+            alert('O cursor saiu do elemento')
+        }
+
+    </script>
+
+    <body>
+
+        <div class="titulo"> 
+            <h1>Eventos de Mouse</h1>
+        </div>
+
+        <div class="teste">
+            <div onclick="onMouseClick()" style="background: grey;">
+                Clique
+            </div>
+            <div ondblclick="onDBClick()" style="background: red;">
+                Clique Duas Vezes
+            </div>
+            <div onmouseup="onMouseUp()" style="background: rgb(223, 223, 24);">
+                Clique e Segure
+            </div>
+            <div onmouseover="onMouseOver()" style="background: green;">
+                Passe o Mouse
+            </div>
+            <div onmouseout="onMouseOut()" style="background: blue;">
+                Tire o Mouse
+            </div>
+        </div>
+
+    </body>
+</html>

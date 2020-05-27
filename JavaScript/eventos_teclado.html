@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Introdução a JavaScript</title>
+    </head>
+
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+        div.titulo {
+            text-align: center;
+        }
+        
+        div.teste {
+            display: flex;
+            justify-content: space-around;
+            box-sizing: border-box;
+            margin: 50px;
+        }
+
+        div.teste > div {
+            width: 200px;
+            height: 150px;
+            text-align: center;
+            line-height: 9rem;
+            color: white;
+            font-size: 1.4em;
+        }
+
+        div.teste > div:hover {
+            cursor: pointer;
+        }
+
+    </style>
+
+    <script>
+        
+        //Alerta antes de liberar o caractere
+        function onKeyDown(){
+            alert('Apertou a Tecla')
+        }
+
+        //Igual ao onkeydown
+        //Mas só funciona se for pressionado um caractere
+        function onKeyPress() {
+            alert('Teclou Algum Caractere')
+        }
+
+        //Alerta depois de liberar o caractere
+        function onKeyUp() {
+            alert('Soltou a Tecla')
+        }
+
+    </script>
+
+    <body>
+
+        <div class="titulo"> 
+            <h1>Eventos de Teclado</h1>
+        </div>
+
+        <div class="teste">
+            <label>
+                Alerta antes de liberar o caractere
+                <input onkeydown="onKeyDown()" type="text">
+            </label>
+            <label>
+                Igual onkeydown mas só libera se for um caractere
+                <input onkeypress="onKeyPress()" type="text">
+            </label>
+            <label>
+                Alerta depois de liberar o caractere
+                <input onkeyup="onKeyUp()" type="text">
+            </label>
+            
+        </div>
+
+    </body>
+</html>

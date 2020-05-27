@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Introdução a JavaScript</title>
+    </head>
+
+    <script>
+
+        //para mais atributos e métodos visite:
+        //https://www.w3schools.com/jsref/jsref_obj_date.asp
+
+        //instancia do objeto date
+        var data = new Date()
+
+        //Chamando métodos
+
+        //método getDate
+        //Recupera a data
+        document.write(data.getDate() + '<br/>')
+
+        //getMonth
+        //Recupera o mês, porém trás a informação representando de 0 a 11
+        //portanto é necessário somar +1 para que a representação fique
+        //igual a do mundo real
+        document.write((data.getMonth() + 1) + '<br/>')
+
+        //getFullYear
+        //Recupera o ano
+        document.write(data.getFullYear() + '<br/>')
+
+        document.write('<hr/>')
+
+        //adicionar ou remover dia
+        document.write(data.toString()) //descreve a data atual
+        document.write('<br/>')
+        //adicionando
+        data.setDate(data.getDate() + 2)
+        document.write(data.toString())
+
+        //adicionar ou remover Mês
+        document.write(data.toString()) //descreve a data atual
+        document.write('<br/>')
+        //adicionando
+        data.setMonth(data.getMonth() + 2)
+        document.write(data.toString())
+
+        //adicionar ou remover Anos
+        document.write(data.toString()) //descreve a data atual
+        document.write('<br/>')
+        //adicionando
+        data.setFullYear(data.getFullYear() + 2)
+        document.write(data.toString())
+
+    </script>
+
+    <body>
+        
+    </body>
+</html>
