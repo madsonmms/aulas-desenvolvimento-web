@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Introdução a JavaScript</title>
+    </head>
+
+    <script>
+        
+       //array multidimensional representa um índice de um array que representa outro array
+
+       //array mãe
+       var lista_coisas = Array()
+
+       //índice do array com outro array
+       lista_coisas['frutas'] = Array('Banana','Maçã','Morango','Uva')
+
+       //segundo índice do array com outro array
+       lista_coisas['pessoas'] = []
+       lista_coisas['pessoas']['a'] = 'João'
+       lista_coisas['pessoas']['b'] = 'Jailson'
+       lista_coisas['pessoas']['c'] = 'Maria'
+
+       console.log(lista_coisas)
+       console.log(lista_coisas['frutas'][3])
+       document.write(lista_coisas['pessoas']['b'])
+
+    </script>
+
+    <body>
+        
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Introdução a JavaScript</title>
+    </head>
+
+    <script>
+        
+       var lista_frutas = Array('Banana','Maçã','Morango','Uva')
+
+       //indexOf mostra a posição do elemento no Array
+       console.log(lista_frutas.indexOf('Morango'))
+       /*
+       É importante lembrar que indexOf é case sensitive
+       */
+
+       var auxiliar = lista_frutas.indexOf('Morango')
+
+       if(auxiliar === -1) {
+           document.write('Elemento não existe')
+       }
+       else {
+           document.write('Elemento existe e está na posição: ' + auxiliar)
+       }
+    </script>
+
+    <body>
+        
+    </body>
+</html>

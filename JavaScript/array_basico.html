@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Introdução a JavaScript</title>
+    </head>
+
+    <script>
+        
+        //declaração de array em JS
+        var lista_frutas = [] 
+        /*
+        também pode ser declarado como Array() 
+        ou Array('Banana', 'Maçã', 'etc..')
+        ou ['Banana', 'Maçã', 'etc..']
+        */
+
+        /*
+        em JS é possível usar diferentes tipos tanto no índice do
+        array quanto no seu conteúdo
+        */
+        lista_frutas[0] = 'Banana'
+        lista_frutas[1] = true
+        lista_frutas['x'] = 'Morango'
+        lista_frutas[3] = 100
+
+        console.log(lista_frutas)
+
+        /*
+        OBS: o atributo length contará espaços vazios anteriores ao último índice,
+        podendo não refletir na quantidade de arrays que foram indexados
+
+        Ex:
+        lista_frutas[1] = 'Banana'
+        lista_frutas[2] = 'Maçã'
+        lista_frutas[3] = 'Morango'
+        lista_frutas[4] = 'Uva'
+
+        Array = {empty, 'Banana', 'Maçã', 'Morango', 'Uva'}
+
+        length: 5
+        */
+
+    </script>
+
+    <body>
+        
+    </body>
+</html>
