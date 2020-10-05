@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Introdução a JavaScript</title>
+    </head>
+
+    <body>
+
+        <h3>Digite igual ou diferente do caralogo para ver o funcionamento</h3>
+        <div>
+            <input id="inputPesquisa" type="text" placeholder="Pesquisa...">
+            <button id="btnPesquisa" onclick="getVideo()">Pesquisar</button>
+        </div>
+        <br>
+        <div>
+            <input id="resultado" type="text" placeholder="Resultado" disabled>
+        </div>
+    
+        <h3>Catalogo</h3>
+        <ol>
+            <li>Fullmetal Alchemist</li>
+        </ol>
+        
+    </body>
+
+    <script>
+
+        //supondo que este programa pesquisa videos no netflix
+        var video = Array()
+
+        video[1] = Array() //declaração do array
+        //Criando Array multidimensional
+        video[1]['nome'] = 'Fullmetal Alchemist'
+        video[1]['categoria'] = 'Anime'
+
+        //função para pegar o video
+        function getVideo(video) {
+
+            try {
+                var filme = document.getElementById('inputPesquisa').value
+                if(filme = video[1]['nome']) {
+                    document.getElementById('resultado').value = filme
+                }
+                console.log('A pesquisa deu certo e caiu no try')
+            } catch (erro) {
+                console.log('Não encontrou o filme e caiu no catch')
+            }
+        }
+
+    </script>
+</html>
